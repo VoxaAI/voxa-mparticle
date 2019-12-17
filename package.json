@@ -1,0 +1,46 @@
+{
+  "name": "voxa-mparticle",
+  "version": "0.1.0",
+  "description": "Voxa plugin for the mParticle Analytics platform",
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha --recursive tests",
+    "lint": "eslint lib tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoxaAI/voxa-mparticle.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VoxaAI/voxa-mparticle/issues"
+  },
+  "homepage": "https://github.com/VoxaAI/voxa-mparticle#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mparticle": "^1.0.4"
+  },
+  "peerDependencies": {
+    "voxa": "^3.3.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.591.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^3.1.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "simple-mock": "^0.8.0",
+    "timekeeper": "^2.2.0",
+    "voxa": "^3.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint && yarn test"
+    }
+  }
+}
