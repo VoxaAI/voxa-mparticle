@@ -27,27 +27,27 @@ voxaMParticle(voxaApp, mParticleConfig);
 Features
 --------
 
-## Development and Production enviroments
+### Development and Production enviroments
 
 The plugin will configure the enviroment of the batch events according to the `NODE_ENV` used. If `NODE_ENV` is equal to `production` it will create a production batch of events, otherwise it will use a development batch.
 
-## User identity
+### User identity
 
 User attributes are saved as the user id, supported interfaces and voice platform (only Alexa for now)
 
-## Device information
+### Device information
 
 Device information is gathered like device manufacturer (only Amazon for now), language and country.
 
-## Session information
+### Session information
 
 Session id and timestamps are added automatically to the batch when the session starts and ends.
 
-## Navigation events
+### Navigation events
 
 State transitions are added as navigation events when the transition happens.
 
-## Custom events
+### Custom events
 
 You can add any custom events inside your Voxa states. You will have the mParticle plugin available in your `voxaEvent`. You can pass a custom event string and custom attributes as an object.
 
@@ -60,6 +60,6 @@ const someCustomAttributes = {
 voxaEvent.mParticle.addCustomEvent("CustomEvent", someCustomAttributes);
 ```
 
-## Saving events
+### Saving events
 
 The plugin will automatically send events at the end of each request or at the end of the session.
