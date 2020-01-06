@@ -63,3 +63,10 @@ voxaEvent.mParticle.addCustomEvent("CustomEvent", someCustomAttributes);
 ### Saving events
 
 The plugin will automatically send events at the end of each request or at the end of the session.
+
+
+TODO
+--------
+
+- Add support for non Amazon Alexa devices (like 3rd party thermostats and speakers)
+- Add support for Google Assistant devices
